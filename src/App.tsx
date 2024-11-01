@@ -7,13 +7,6 @@ import { BrowserRouter } from 'react-router-dom'
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      {/* <Router>
-        <Layout>
-          <Routes>
-            <Route path='/' element={<Home />} />
-          </Routes>
-        </Layout>
-      </Router> */}
       <BrowserRouter>
         <Router />
       </BrowserRouter>
