@@ -8,6 +8,7 @@ import ShopInput from './components/channel/Shop'
 import WebInput from './components/channel/WebFacebookZalo'
 import { Box } from '@mui/material'
 import CarouselAnt from './components/top'
+import Masonry from './components/animation'
 const Home: React.FC = () => {
   const [userData, setUserData] = useState<UserInputType | null>(null)
   const [isSliding, setIsSliding] = useState<boolean>(false) // State for sliding effect
@@ -65,6 +66,7 @@ const Home: React.FC = () => {
       </Box>
       <div className={`input-container ${isSliding ? 'slide-out' : ''}`}>{renderComponent}</div>
       {isSliding && <div className={`input-container slide-in`}>{renderComponent}</div>}
+      <Masonry/>
     </main>
   )
 }
